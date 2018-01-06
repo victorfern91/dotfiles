@@ -1,0 +1,28 @@
+function create-branch() {
+    git pull --rebase
+    git checkout -B $1
+    git push origin $1 -u
+}
+
+function delete-branch() {
+    delete-local $1
+    delete-remote $1
+}
+ 
+function delete-local() {
+    git branch -D $1
+}
+ 
+ 
+function delete-remote() {
+    echo -n "${red}You are deleting ${orange}$1${red} branch${nc}. Are you sure? [y/Y] "
+    read answer
+    if [[ $answer =~ ^[Yy]$ ]]; then
+        git push origin --delete $1
+    fi
+}
+
+alias branch="git branch"
+alias switch="git fetch && git checkout"
+alias diff="git diff"
+alias status="git status"

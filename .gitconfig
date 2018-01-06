@@ -8,4 +8,6 @@
 [alias]
 	st = status
 	c = commit
-	amend = commit --amend --reuse-message=HEAD 
+	amend = commit --amend --reuse-message=HEAD
+	  lg = log --graph --pretty=format:'%Cred%h%Creset (%G?) -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	contributors = shortlog --summary --numbered
