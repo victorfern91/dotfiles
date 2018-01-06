@@ -22,7 +22,7 @@ function delete-remote() {
     fi
 }
 
-alias branch="git branch"
+alias branch="git branch -vv"
 alias switch="git fetch && git checkout"
 alias diff="git diff"
 alias status="git status"
