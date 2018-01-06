@@ -1,0 +1,11 @@
+[user]
+	email = victorfern91@gmail.com
+	name  = Victor Fernandes
+
+[push]
+	default = simple
+
+[alias]
+	st = status
+	c = commit
+	amend = commit --amend --reuse-message=HEAD 

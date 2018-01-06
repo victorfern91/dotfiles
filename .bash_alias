@@ -1,0 +1,4 @@
+# Navigation Alias
+
+alias ..="cd .."
+alias ~="cd ~"
