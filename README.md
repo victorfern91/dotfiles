@@ -2,6 +2,5 @@
 
 ## How to install
 ```bash
-git clone git@github.com/victorfern91:dotfiles.git
-bash ./install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/victorfern91/dotfiles/master/install.sh)"
 ```
