@@ -1,0 +1,39 @@
+[user]
+	email = victorfern91@gmail.com
+	name  = Victor Fernandes
+
+[alias]
+	st = status -sb
+	c = commit
+	amend = commit --amend --reuse-message=HEAD
+	lg = log --graph --pretty=format:'%Cred%h%Creset (%G?) -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	contributors = shortlog --summary --numbered
+    # See more about git please at https://estl.tech/a-gentler-force-push-on-git-force-with-lease-fb15701218df
+	please = push --force-with-lease
+
+######
+# Git UI
+######
+
+[color]
+    branch = auto
+    diff = auto
+    grep = auto
+    interactive = auto
+    status = auto
+
+######
+# Git actions
+######
+
+[push]
+	default = simple
+    autoSetupRemote = true
+
+[pull]
+    rebase = true
+    default = simple
+
+
+[rebase]
+    autoStash = true
