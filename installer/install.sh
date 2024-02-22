@@ -24,6 +24,9 @@ warn "
 ";
 
 # Installing
-. "$DIR/steps/1.sh"
-. "$DIR/steps/2.sh"
+#. "$DIR/steps/1.sh"
+#. "$DIR/steps/2.sh"
+# step 3
+. "$DIR/steps/3.sh"
+#. "$DIR/steps/6.sh"
 

@@ -34,6 +34,5 @@
     rebase = true
     default = simple
 
-
 [rebase]
     autoStash = true
