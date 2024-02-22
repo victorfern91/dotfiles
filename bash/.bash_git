@@ -4,24 +4,6 @@ function create-branch() {
     git push origin $1 -u
 }
 
-function delete-branch() {
-    delete-local $1
-    delete-remote $1
-}
- 
-function delete-local() {
-    git branch -D $1
-}
- 
- 
-function delete-remote() {
-    echo -n "${red}You are deleting ${orange}$1${red} branch${nc}. Are you sure? [y/Y] "
-    read answer
-    if [[ $answer =~ ^[Yy]$ ]]; then
-        git push origin --delete $1
-    fi
-}
-
 function clone() {
   git clone $1
   cd $(basename ${1%.*})
@@ -39,5 +21,3 @@ function squash-all() {
 
 alias branch="git branch -vv"
 alias switch="git fetch && git checkout"
-alias diff="git diff"
-alias status="git status"

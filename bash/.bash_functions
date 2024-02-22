@@ -1,0 +1,3 @@
+function victor() {
+	cd ~/victor
+}

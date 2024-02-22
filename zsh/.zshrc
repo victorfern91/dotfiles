@@ -25,3 +25,4 @@ zstyle ':omz:update' mode auto
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.bash_profile
