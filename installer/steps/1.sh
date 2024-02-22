@@ -46,6 +46,8 @@ install_homebrew () {
         success "Homebrew and packages updated!";
     else
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
+	(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/victor/.zprofile
+    	eval "$(/opt/homebrew/bin/brew shellenv)"
     fi
 }
 
