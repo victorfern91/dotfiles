@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+git clone git@github.com:victorfern91/dotfiles.git
+
+cd dotfiles/installer
+
 # find current folder
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd );
 
