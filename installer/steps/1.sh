@@ -14,14 +14,17 @@ start() {
     xcode-select —-install;
     success "# 1.3 -> Xcode installed"
     info "# 1.4 Installing Surfshark VPN (remote work/personal VPN)"
-    brew install --cask surfshark
+    #brew install --cask surfshark
     success "# 1.4 -> Surfshark VPN installed"
     info "# 1.5 Installing Webstorm"
     brew install --cask webstorm
     success "# 1.5 -> Webstorm installed"
     info "# 1.5 Installing VSCode"
     brew install --cask visual-studio-code
-    success "# 1.5 -> Webstorm VSCode"
+    success "# 1.5 -> VSCode installed"
+    info "# 1.6 Installing Cursor"
+    brew install --cask cursor
+    success "# 1.6 -> Cursor installed"
 }
 
 # Detect binaries
